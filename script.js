@@ -1,4 +1,4 @@
-document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function() {
             const backgroundMusic = document.getElementById('background-music');
             const profileImg = document.getElementById('profile-img');
             
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             setInterval(updateClocks, 1000);
             updateClocks(); 
-            
+
             const observerOptions = {
                 threshold: 0.3
             };
