@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Liwirya Portopolio</title>
+  <meta name="description" content="Liwirya Software & Network Engineer.">
+  <meta name="keywords" content="Portofolio, Web Developer, Network Engineer, Software Engineer, Tailwind, HTML, CSS, JavaScript">
+  <meta name="author" content="Liwirya">
+  <meta property="og:title" content="Liwirya Portopolio">
+  <meta property="og:description" content="Portofolio, Network, Software Engineer.">
+  <meta property="og:image" content="https://files.catbox.moe/mamuh0.png">
+  <meta property="og:url" content="https://example.com">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="./gambar/lw.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="tailwind.config.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="min-h-screen bg-dark-bg">
+    <div class="container mx-auto px-6 py-16 max-w-5xl">
+        <section id="profile" class="mb-24">
+            <div class="text-center">
+                <div class="profile-glow w-40 h-40 md:w-48 md:h-48 mx-auto mb-8 relative cursor-default">
+                    <img id="profile-img" src="https://files.catbox.moe/zelxg6.jpg" alt="Foto Profil Liwirya" class="profile-img w-40 h-40 md:w-48 md:h-48 border-2 border-transparent shadow-lg">
+                </div>
+                
+                <h1 class="text-4xl md:text-5xl font-bold bg-gradient-to-r from-neon-blue to-neon-purple bg-clip-text text-transparent mb-4 opacity-0 animate-fade-in-up delay-1">Liwirya</h1>
+                <h2 class="text-xl md:text-2xl text-neon-turquoise font-medium mb-6 opacity-0 animate-fade-in-up delay-2">Software & Network Engineer</h2>
+                <p class="text-gray-300 text-lg leading-relaxed max-w-3xl mx-auto mb-8 opacity-0 animate-fade-in-up delay-3">
+                    Seorang pemula yang menekuni bidang Software & Network Engineer, dan bercita cita dengan ambisi yg besar
+                </p>
+                
+                <div class="flex justify-center space-x-6 opacity-0 animate-fade-in-up delay-4">
+                    <a href="https://instagram.com/mynameisliwirya" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-full flex items-center justify-center text-xl hover:text-neon-purple">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://github.com/Liwirya" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-full flex items-center justify-center text-xl hover:text-neon-blue">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/liwirya" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-full flex items-center justify-center text-xl hover:text-neon-turquoise">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-24">
+            <h2 class="text-3xl font-bold text-center mb-16 text-transparent bg-clip-text bg-gradient-to-r from-neon-purple to-neon-blue opacity-0 animate-fade-in-up delay-1">Skills & Expertise</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- C++ -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-2">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-cuttlefish skill-icon text-blue-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">C++</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-blue-500 to-blue-400" style="--progress-width: 100%">
+                            <span class="progress-text">40%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Python -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-3">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-python skill-icon text-yellow-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Python</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-yellow-500 to-yellow-400" style="--progress-width: 50%">
+                            <span class="progress-text">20%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Java -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-4">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-java skill-icon text-orange-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Java</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-orange-500 to-orange-400" style="--progress-width: 85%">
+                            <span class="progress-text">3%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Network Security -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-5">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-shield-alt skill-icon text-red-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Network Security</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-red-500 to-red-400" style="--progress-width: 90%">
+                            <span class="progress-text">5%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Linux System -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-6">
+                    <div class="flex items-center mb-4">
+                        <i class="fab fa-linux skill-icon text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Linux System</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-green-500 to-green-400" style="--progress-width: 95%">
+                            <span class="progress-text">0%</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Network Architecture -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-7">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-network-wired skill-icon text-purple-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Network Architecture</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-purple-500 to-purple-400" style="--progress-width: 88%">
+                            <span class="progress-text">20%</span>
+                        </div>
+                    </div>
+                </div>
+
+                               <!-- Cloud Computing -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-9">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-cloud skill-icon text-indigo-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Cloud Computing</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-indigo-500 to-indigo-400" style="--progress-width: 80%">
+                            <span class="progress-text">40%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Database Systems -->
+                <div class="glassmorphism p-6 rounded-2xl card-hover opacity-0 animate-fade-in-up delay-10">
+                    <div class="flex items-center mb-4">
+                        <i class="fas fa-database skill-icon text-green-500 mr-3"></i>
+                        <h3 class="text-xl font-bold text-white">Database Systems</h3>
+                    </div>
+                    <div class="progress-container">
+                        <div class="progress-bar bg-gradient-to-r from-green-500 to-green-400" style="--progress-width: 92%">
+                            <span class="progress-text">30%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="clock" class="mb-20">
+            <h2 class="text-3xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-neon-blue to-neon-turquoise opacity-0 animate-fade-in-up delay-1">Jam Dunia</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="glassmorphism p-6 rounded-2xl text-center opacity-0 animate-fade-in-up delay-2">
+                    <h3 class="text-lg font-semibold mb-3 text-neon-blue">WIB <span class="text-sm text-gray-400">(UTC+7)</span></h3>
+                    <div class="bg-dark-card/50 rounded-xl p-4 border border-gray-700">
+                        <p id="wib-clock" class="text-3xl font-mono font-bold digital-clock">00:00:00</p>
+                    </div>
+                </div>
+                <div class="glassmorphism p-6 rounded-2xl text-center opacity-0 animate-fade-in-up delay-3">
+                    <h3 class="text-lg font-semibold mb-3 text-neon-purple">WITA <span class="text-sm text-gray-400">(UTC+8)</span></h3>
+                    <div class="bg-dark-card/50 rounded-xl p-4 border border-gray-700">
+                        <p id="wita-clock" class="text-3xl font-mono font-bold digital-clock">00:00:00</p>
+                    </div>
+                </div>
+                <div class="glassmorphism p-6 rounded-2xl text-center opacity-0 animate-fade-in-up delay-4">
+                    <h3 class="text-lg font-semibold mb-3 text-neon-turquoise">WIT <span class="text-sm text-gray-400">(UTC+9)</span></h3>
+                    <div class="bg-dark-card/50 rounded-xl p-4 border border-gray-700">
+                        <p id="wit-clock" class="text-3xl font-mono font-bold digital-clock">00:00:00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer class="footer-glow py-12 px-6">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-8 md:mb-0 text-center md:text-left">
+                    <h3 class="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-neon-blue to-neon-purple mb-2">Liwirya</h3>
+                    <p class="text-gray-400 max-w-md">"Berbanggalah karena sudah mau memulai dan melakukannya.</p>
+                </div>
+                <div class="flex flex-col items-center md:items-end">
+                    <h4 class="text-lg font-semibold mb-4 text-white">Temukan Saya Di</h4>
+                    <div class="flex space-x-6">
+                        <a href="https://instagram.com/mynameisliwirya" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-full flex items-center justify-center text-xl hover:text-neon-purple footer-link">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://github.com/Liwirya" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-full flex items-center justify-center text-xl hover:text-neon-blue footer-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://linkedin.com/in/liwirya" target="_blank" rel="noopener noreferrer" class="social-icon w-12 h-12 rounded-full flex items-center justify-center text-xl hover:text-neon-turquoise footer-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6 text-gray-500 text-sm">
+                        <p>&copy; 2025 Liwirya. All rights reserved.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <audio id="background-music" autoplay loop>
+        <source src="./audio/JKT48 - Seventeen  Color Coded Lyrics.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="javascript.js">       
+    </script>
+</body>
+</html>
