@@ -180,3 +180,221 @@ body {
             height: 1px;
             background: linear-gradient(90deg, transparent, #9d4edd, #00c2ff, transparent);
         }
+
+        .top-sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 50;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            background: rgba(13, 18, 30, 0.8);
+            backdrop-filter: blur(10px);
+            border-bottom: 2px solid #9d4edd;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .name-tag {
+            font-family: 'Poppins', sans-serif;
+            font-weight: 700;
+            font-size: 1.5rem;
+            background: linear-gradient(45deg, #00c2ff, #9d4edd);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: 1px;
+            padding: 8px 16px;
+            border: 2px solid #9d4edd;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(157, 78, 221, 0.3);
+        }
+
+        .timeline {
+            position: relative;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .timeline::after {
+            content: '';
+            position: absolute;
+            width: 4px;
+            background: linear-gradient(to bottom, #9d4edd, #00c2ff);
+            top: 0;
+            bottom: 0;
+            left: 50%;
+            margin-left: -2px;
+            border-radius: 2px;
+            box-shadow: 0 0 10px rgba(157, 78, 221, 0.5);
+        }
+
+        .timeline-item {
+            padding: 10px 40px;
+            position: relative;
+            width: 50%;
+            opacity: 0;
+            animation: timeline-appear 0.8s ease-out forwards;
+        }
+
+        .timeline-item:nth-child(odd) {
+            left: 0;
+            animation-delay: 0.2s;
+        }
+
+        .timeline-item:nth-child(even) {
+            left: 50%;
+            animation-delay: 0.4s;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            right: -10px;
+            background-color: #0a0e17;
+            border: 4px solid #9d4edd;
+            top: 15px;
+            border-radius: 50%;
+            z-index: 1;
+            box-shadow: 0 0 0 4px rgba(157, 78, 221, 0.2);
+        }
+
+        .timeline-item:nth-child(even)::after {
+            left: -10px;
+        }
+
+        .timeline-content {
+            padding: 25px 30px;
+            background: rgba(19, 26, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(157, 78, 221, 0.3);
+            border-color: rgba(157, 78, 221, 0.5);
+        }
+
+        .timeline-content h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #9d4edd;
+            margin-bottom: 8px;
+        }
+
+        .timeline-content .date {
+            font-size: 0.9rem;
+            color: #48e5c2;
+            font-weight: 600;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .timeline-content p {
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .project-link {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(45deg, #00c2ff, #48e5c2);
+            color: #0a0e17;
+            font-weight: 600;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            font-size: 0.9rem;
+        }
+
+        .project-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(72, 229, 194, 0.4);
+        }
+
+        .project-card {
+            background: rgba(19, 26, 42, 0.8);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            padding: 25px;
+            transition: all 0.4s ease;
+            margin-bottom: 20px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 157, 78, 221, 0.3);
+            border-color: rgba(157, 78, 221, 0.5);
+        }
+
+        .project-card h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: #9d4edd;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #e2e8f0;
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+
+        .tech-tag {
+            background: rgba(157, 78, 221, 0.2);
+            color: #9d4edd;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        @media screen and (max-width: 768px) {
+            .timeline::after {
+                left: 31px;
+            }
+            
+            .timeline-item {
+                width: 100%;
+                padding-left: 70px;
+                padding-right: 25px;
+            }
+            
+            .timeline-item:nth-child(even) {
+                left: 0;
+            }
+            
+            .timeline-item::after {
+                left: 21px;
+                top: 15px;
+            }
+            
+            .timeline-item:nth-child(even)::after {
+                left: 21px;
+            }
+            
+            .top-sidebar {
+                padding: 12px 20px;
+            }
+            
+            .name-tag {
+                font-size: 1.2rem;
+                padding: 6px 12px;
+            }
+        }

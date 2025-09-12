@@ -1,4 +1,4 @@
-        document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function() {
             const backgroundMusic = document.getElementById('background-music');
             const profileImg = document.getElementById('profile-img');
             
@@ -56,13 +56,38 @@
                                 bar.style.opacity = '1';
                             }, index * 200);
                         });
+                        
+                        const timelineItems = entry.target.querySelectorAll('.timeline-item');
+                        timelineItems.forEach((item, index) => {
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                            }, index * 300);
+                        });
+                        
+                        const projectCards = document.querySelectorAll('.project-card');
+                        projectCards.forEach((card, index) => {
+                            setTimeout(() => {
+                                card.style.opacity = '1';
+                            }, index * 200);
+                        });
                     }
                 });
             }, observerOptions);
 
             const skillSection = document.querySelector('#skills');
+            const timelineSection = document.querySelector('#timeline');
+            const projectsSection = document.querySelector('#projects');
+            
             if (skillSection) {
                 observer.observe(skillSection);
+            }
+            
+            if (timelineSection) {
+                observer.observe(timelineSection);
+            }
+            
+            if (projectsSection) {
+                observer.observe(projectsSection);
             }
 
             const profileContainer = document.querySelector('.profile-glow');

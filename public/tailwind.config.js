@@ -21,6 +21,7 @@ tailwind.config = {
                         'slide-in-left': 'slideInLeft 0.6s ease-out forwards',
                         'slide-in-right': 'slideInRight 0.6s ease-out forwards',
                         'rotate-slow': 'rotateSlow 20s linear infinite',
+                        'timeline-appear': 'timelineAppear 0.8s ease-out forwards',
                     },
                     keyframes: {
                         fadeInUp: {
@@ -50,6 +51,10 @@ tailwind.config = {
                         rotateSlow: {
                             '0%': { transform: 'rotate(0deg)' },
                             '100%': { transform: 'rotate(360deg)' },
+                        },
+                        timelineAppear: {
+                            '0%': { opacity: '0', transform: 'translateX(-20px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
                         }
                     }
                 }
